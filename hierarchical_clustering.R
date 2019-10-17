@@ -18,9 +18,9 @@ result <- pvclust(t, method.dist="euclidean",method.hclust="average",
                                 nboot=1000)
 
 result.d<-as.dendrogram(result)
-labels_colors(result) <-c("palegreen3","skyblue3","deepskyblue4","firebrick1")[sort_levels_values(
-  as.numeric(samples.2)[order.dendrogram(result)])]
-labels(result) <- paste(as.character(samples)[order.dendrogram(result)],
+labels_colors(result.d) <-c("palegreen3","skyblue3","deepskyblue4","firebrick1")[sort_levels_values(
+  as.numeric(samples.2)[order.dendrogram(result.d)])]
+labels(result.d) <- paste(as.character(samples)[order.dendrogram(result.d)],
                         # "(",labels(clusters),")", 
                         sep = "")
 #reduce size of labels
