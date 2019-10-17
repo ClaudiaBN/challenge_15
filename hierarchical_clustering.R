@@ -1,5 +1,6 @@
-library(dendextend)
 install.packages("dendextend")
+library(dendextend)
+install.packages("colorspace")
 library(colorspace) # get nice colors
 df<-read.csv("signatures.csv")
 
